@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Notes & Discussion Week 3</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/riko/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.3.5/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="principles-and-theories-of-teaching-and-learning-%E5%AD%B8%E7%BF%92%E8%88%87%E6%95%99%E5%AD%B8%E5%8E%9F%E7%90%86">Principles and Theories of Teaching and Learning 學習與教學原理</h1>
+
+<h2 class="mume-header" id="%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BA%E4%B8%8E%E6%95%99%E5%AD%A6%E7%9A%84%E4%B8%89%E4%B8%AA%E5%AD%A6%E6%B4%BE">学习理论与教学的三个学派</h2>
+
+<h3 class="mume-header" id="%E8%A1%8C%E4%B8%BA%E5%AD%A6%E4%B9%A0%E8%AE%BAbehavioral-learning-theory">行为学习论(Behavioral Learning Theory)</h3>
+
+<p>个体在活动中受外在因素影响而使其行为改变的历程。<br>
+J.B. Watson (Little Albert Experiment, Classical Conditioning), B. F. Skinner (Operant Conditioning)</p>
+<h4 class="mume-header" id="%E8%A1%8C%E4%B8%BA%E4%B8%BB%E4%B9%89%E5%AD%A6%E4%B9%A0%E8%AE%BA%E7%9A%84%E6%A0%B8%E5%BF%83%E8%A7%82%E7%82%B9">行为主义学习论的核心观点</h4>
+
+<ol>
+<li>强调：科学、客观、控制、预测</li>
+<li>There is a privileged, external viewpoint that one can obtain. 存在一个上帝视角。
+<ol>
+<li>Grounded in objectivism, which assumes that there is a single reality external to individuals.</li>
+<li>Learners: ACQUIRE knowledge from outsied resources.</li>
+</ol>
+</li>
+<li>学习是外显行为改变的历程→通过可观察、可测量的<strong>行为目标</strong>来指引教学活动过程
+<ol>
+<li>Reject discussion about internal mental states.</li>
+</ol>
+</li>
+<li>操作制约：Stimulus-Response，以此解释人类的学习行为。
+<ol>
+<li>三个要素建立联结：环境刺激、个体的自发反应、强化作用</li>
+<li>强化作用是行为习得的关键所在：个体的自发反应→收到回馈→反应被强化而保留</li>
+<li>The goal of conditioning is to produce a behavioral result.</li>
+<li>e.g. A student's correct answer to a question as a sign of successful conditioning, the continue to reinforce correct responses behaviorally by assigning good grades.</li>
+</ol>
+</li>
+<li>强化原则：经过Positive / Negtive Reinforcer的安排使个体行为得到改变的过程→奖励和惩罚
+<ol>
+<li>P/N Reinforcer (+R -R +P -P)</li>
+</ol>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">Apply Stimulus (P)</th>
+<th style="text-align:center">Remove Stimulus (N)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>R</strong>einforcement</td>
+<td style="text-align:center">+R (PR)</td>
+<td style="text-align:center">-R (NR)</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>P</strong>unishment</td>
+<td style="text-align:center">+P (PP)</td>
+<td style="text-align:center">-P (NP)</td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="%E8%A1%8C%E4%B8%BA%E4%B8%BB%E4%B9%89%E5%AD%A6%E4%B9%A0%E8%AE%BA%E7%9A%84%E7%9B%B8%E5%85%B3%E5%BA%94%E7%94%A8">行为主义学习论的相关应用</h4>
+
+<ol>
+<li>Reinforcement: 立即强化、延宕强化、连续强化、部分强化</li>
+<li>Shaping, Successive Approximation (分解复杂行为的方法，循序渐进将多个行为连贯的方法)</li>
+<li>Generalization, Discrimination, Extinction, Spontaneous Recobery, Secondary-order Conditioning.</li>
+<li>Behavior Modification</li>
+<li>Programmed Instruction</li>
+</ol>
+<hr>
+<h3 class="mume-header" id="%E8%AE%A4%E7%9F%A5%E5%AD%A6%E4%B9%A0%E8%AE%BA">认知学习论</h3>
+
+<p>人类学习行为内在历程的解释+多方面的学习，视学习为个体对事物经认识、辨别、理解而获得新知识的历程。<br>
+Our OLD friends: Piaget, Bruner, Asusbel</p>
+<h4 class="mume-header" id="%E8%AE%A4%E7%9F%A5%E4%B8%BB%E4%B9%89%E5%AD%A6%E4%B9%A0%E8%AE%BA%E7%9A%84%E6%A0%B8%E5%BF%83%E8%A7%82%E7%82%B9">认知主义学习论的核心观点</h4>
+
+<p>Internal Mental Structures and Acquisition of Knowledge.</p>
+<ol>
+<li>主张在学习情境中应用已有的认知结构（CS)去认识、辨别，理解外在事物存在的关系，进而增加个人经验，然后扩大和提升自己的认知结构。</li>
+<li>内发的、主动的、整体性的，强调（个人的）知识结构形式（structure and the form of knowledge）</li>
+<li>Learning Strategies</li>
+</ol>
+<h4 class="mume-header" id="%E8%AE%A4%E7%9F%A5%E5%AD%A6%E4%B9%A0%E8%AE%BA%E4%B8%AD%E7%9A%84%E4%B8%BB%E8%A6%81%E4%B8%89%E4%B8%AA%E6%B5%81%E6%B4%BE%E7%94%84%E6%99%93%E5%85%B0">认知学习论中的主要三个流派（甄晓兰）</h4>
+
+<ol>
+<li>
+<p>布鲁纳：发现学习论</p>
+<ol>
+<li>学习的过程：个体主动参与处理讯息，并将讯息加以组织、建构，进而吸收的过程。</li>
+<li>强调：学生主动对事物的自然探索，从而发现事象变化的原理原则</li>
+<li>两个领域：Cognitve Representation and Structure of Knowledge
+<ol>
+<li>个体之所以能够认识环境中的事物，是因为个体具备对事物的认知表征(CR)的能力。</li>
+<li>随个体认知发展改变，呈现下列表征方式：
+<ol>
+<li>动作(Enactive)表征</li>
+<li>形象(Iconic)表征</li>
+<li>符号(Symbolic)表征</li>
+</ol>
+</li>
+<li>知识结构(SoK)的呈现方式与学习成效之间存在联系
+<ol>
+<li>任何知识都能够依附其表征方式、其经济性及其效能，加以有系统的组织起来</li>
+<li>后用最简单、学习者可以认知了解的形式，展现出来。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>学习历程：直觉思维(Intuitive Thinking)、学习情境的结构、关联<br>
+→ 目的是结构化的知识，通过知识结构化而习得原理原则，then Generalization&amp; Transfer, for the ability to requiring higher level knowledge.</li>
+<li>应用：启发式教学、教材对结构的重视、教学的意义（灌输还是启发，目的是Readiness）、螺旋课程（内容随年级上升而循环）</li>
+</ol>
+</li>
+<li>
+<p>奥苏贝尔：意义学习理论 Meaningful Learning Theory (to promote...)</p>
+<blockquote>
+<p>Would it not be more realistic to strive ﬁrst to have each pupil respond meaningfully, actively and critically to good expository teaching before we endeavour to make him or her a creative thinker or even a good critical thinker and problem solver? (Ausubel, 1978)</p>
+</blockquote>
+<ol>
+<li>强调：所学事物必须<strong>对学生具有意义</strong>才能产生学习
+<ol>
+<li>teacher-directed learning is more effective than learning by discovery.</li>
+</ol>
+</li>
+<li>Prerequisite Knowledge</li>
+<li>个体的认知结构：概念层次
+<ol>
+<li>SUB-ordinate concept &amp; SUPER-ordinate concept</li>
+<li>SUB-: 个体对事物特征的细节记忆, while SUPER- 个体对整个事物的整体认识，吸收新知识的预备基础</li>
+</ol>
+</li>
+<li>学习历程：用已有的知识核验新概念，纳入已有的知识结构之中，同化自己的知识。
+<ul>
+<li>Much of what is termed conceptual understanding is actually the assimilation of concepts.</li>
+<li>Important for teachers to present new learning in such a way that students can relate it to their existing knowledge, taking into account the complexity of the new learning and the cognitive development of the learners. (Teacher-oriented)</li>
+</ul>
+</li>
+<li>6 Hierarchically-ordered categories in their analysis of learning:
+<ol>
+<li>Representational learning (knowledge)</li>
+<li>Concept learning (comprehension)</li>
+<li>Propositional learning (comprehension)</li>
+<li>Application</li>
+<li>Problem-solving</li>
+<li>Creativity</li>
+</ol>
+</li>
+<li>应用：阐释型教学 Expositive Teaching
+<ol>
+<li>提供前导组织，引导学生进入新知学习的准备状态</li>
+<li>系统的组织和呈现学习材料</li>
+<li>Principe: Progressive Differentiation, Integrative Reconciliation
+<ol>
+<li>Teachers should ‘provide ideational scaffolding’</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>讯息处理学习论(IPM)</p>
+<ol>
+<li>Information Processing Theory: 将个体从接受刺激到表现出反应的内在心理活动视为一个信息处理过程。</li>
+<li>学习过程：</li>
+<li>Memory： STM, WM and LTM
+<ol>
+<li>SHORT-term Memory (within 20s)<br>
+对信息进行深层次的认识和理解并决定如何反应或作长期记忆保留</li>
+<li>LONG-term Memory
+<ol>
+<li>Episodic Memory</li>
+<li>Semantic Memory</li>
+</ol>
+</li>
+<li>WORKING Memory</li>
+</ol>
+</li>
+<li>应用：发展理解问题和问题解决的心理意义，有赖于学生和教材内容的互动
+<ol>
+<li>不同知识应用不同学习策略</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>总结（甄晓兰）</p>
+<ol>
+<li>主动参与</li>
+<li>已有知识，Hierarchical</li>
+<li>知识结构，结构和层次之重要性</li>
+<li>Context</li>
+</ol>
+</li>
+</ol>
+<h3 class="mume-header" id="%E4%BA%92%E5%8A%A8%E5%AD%A6%E4%B9%A0%E8%AE%BA">互动学习论</h3>
+
+<p>介于行为论和认识论之间（？），将学习视为个体与外界互动而产生行为模仿或认知结构改变的历程←强调个体内在的认知</p>
+<h4 class="mume-header" id="%E4%BA%92%E5%8A%A8%E5%AD%A6%E4%B9%A0%E8%AE%BA%E7%9A%84%E6%A0%B8%E5%BF%83%E8%A7%82%E7%82%B9">互动学习论的核心观点</h4>
+
+<ol>
+<li>学习行为、心理历程、环境三者是相互关联的</li>
+<li>心理历程和外在环境互动，产生认知活动和学习行为</li>
+</ol>
+<h4 class="mume-header" id="%E4%BA%92%E5%8A%A8%E5%AD%A6%E4%B9%A0%E8%AE%BA%E7%9A%84%E4%B8%BB%E8%A6%81%E6%B5%81%E6%B4%BE">互动学习论的主要流派</h4>
+
+<ol>
+<li>Bandura: Social Learning Theory
+<ol>
+<li>要旨：解释自然情境中的学习历程
+<ol>
+<li>除了环境因素外，个体对环境中的人、事、物的主观认识和看法，是学习行为的重要因素。</li>
+<li>反对环境决定论。</li>
+<li>环境、认知、行为三者交互，才能确定习得的行为 →</li>
+</ol>
+</li>
+<li>观察学习和模仿——产生社会情境中的行为学习；
+<ol>
+<li>三个要素：行为的楷模、楷模得到的增强、学习者对楷模行为的认知处理过程</li>
+<li>观察：Attention → Retention → Reproduction → Motivation</li>
+<li>Vicarious Learning（e.g. 打机看攻略）</li>
+<li>模仿不是机械性的反应，受学习者心理需求和认知能力等内在历程的中介，产生下列模仿方式，所以学习者未必通过观察就能学到同样的社会行为。
+<ol>
+<li>Direct Modeling</li>
+<li>Synthesized Modeling</li>
+<li>Symbolic Modeling</li>
+<li>Abstract Modeling</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>应用：学习楷模 or 示范者 （言传胜过身教）；自律行为的培养。</li>
+</ol>
+</li>
+<li>Gagne: Learning Conditions<br>
+His work has its roots in a behaviourist model, which he subsequently revised to address cognitive aspects of problem-solving.
+<ol>
+<li>观点：学习是转化<strong>环境刺激</strong>为习得新能力的认知历程。</li>
+<li>学习：基于人表现和技能的多元性，对不同学习种类加以解释
+<ol>
+<li>分类：讯号学习、刺激反应学习、反应连锁、语文联想、辨别学习、概念学习、原则学习、问题解决</li>
+<li>强调学习顺序，已有知识和学习阶层(?)
+<ul>
+<li>Prior knowledge: Extermely IMPORTANT, which applies to the development of thinking skills.</li>
+</ul>
+</li>
+<li>5 varienties of learned capability based on 8 distinct types of learning
+<ol>
+<li>Verbal Information - Metacognitive and Novel Problem-solving processes</li>
+<li>Intellectual Skills - 真正用以解决问题的知识</li>
+<li>Motor Skills</li>
+<li>Attitudes - came through modelling by key figures rather than as a result of pre-planned instruction.</li>
+<li>Cognitive Strategies -</li>
+</ol>
+</li>
+<li>上述五个能力的习得都必须具备特定的学习条件：Internal + External Conditions (已有知识+学习环境)，两者互动产生预期结果。
+<ul>
+<li>The factors that infuluece learning are chiefly determined by the envoronment, and many external conditions can be altered and controlled.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>认知：9个学习的重要处理阶段，顺序上有先后之分，以不同方式促进不同种类的学习。
+<ol>
+<li>Attending</li>
+<li>Expectancy</li>
+<li>Retrieval to Working Memory</li>
+<li>Selective Perception</li>
+<li>Semantic Encoding</li>
+<li>Retrieval&amp; Reinforcement</li>
+<li>Retrieval&amp; Generalization</li>
+</ol>
+</li>
+<li>应用：教学是一组经过设计以支持内在学习的外在事件，因此教师积极安排学习内容，What and How to learn.
+<ol>
+<li>Breakdown the steps of learning.</li>
+<li>计划学习条件和活动目标</li>
+<li>学习本身和学习情境加以经营管理</li>
+<li>为学习者安排支持其学习的外在学习条件</li>
+<li>However, Ausubel ignores Piaget’s work on accommodation and the importance of cognitive restructuring after experiencing cognitive conﬂict.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 class="mume-header" id="%E5%BD%93%E4%BB%A3%E9%87%8D%E8%A6%81%E6%95%99%E5%AD%A6%E8%A7%82">当代重要教学观</h2>
+
+<h3 class="mume-header" id="%E6%95%88%E8%83%BD%E6%95%88%E7%8E%87%E5%AF%BC%E5%90%91%E7%9A%84%E6%95%99%E5%AD%A6%E8%A7%82">效能/效率导向的教学观</h3>
+
+<ol>
+<li>两者相关联、有所相似但不尽相同——效能注重学生基本能力，效率注重教学策略的经济效益（最少投资和最高教育生产力）。</li>
+<li>诉求是Educational Excellence，根据学生的学习成果评价教师的成效。</li>
+<li>工具理性：过程——结果导向；生产线</li>
+<li>信念：A set of defined techniques or treatment, to improve classroom teaching &amp; learning.</li>
+</ol>
+<h3 class="mume-header" id="%E4%BA%BA%E6%9C%AC%E5%AF%BC%E5%90%91%E7%9A%84%E6%95%99%E5%AD%A6%E8%A7%82humanistic-oriented">人本导向的教学观(Humanistic-oriented)</h3>
+
+<ol>
+<li>70年代兴起，受Existentialism和Phenomenology影响最为直接</li>
+<li>Whole Person：人类行为的意向性、目的性和创造性，注重主观意识的经验；自我实现</li>
+<li>介于行为主义和认知主义之间：了解人的学习历程必须研究人自己。</li>
+<li>预设：每个人均具有天赋的内在发展潜力</li>
+<li>学习的产生靠个体本身对环境的知觉与其主观资源性的选择。</li>
+<li>注重点不在学生学习到的知识本身。
+<ol>
+<li>主张教师应辅导学生自主自动学习学生认为有意义的知识</li>
+<li>成功的教学在于能否启迪学生从知识中获取个人意义及潜能是否被激发</li>
+<li>→学习者中心 Learner-Centered的教育理念</li>
+</ol>
+</li>
+</ol>
+<h3 class="mume-header" id="%E5%BB%BA%E6%9E%84%E5%AF%BC%E5%90%91%E7%9A%84%E6%95%99%E5%AD%A6%E8%A7%82">建构导向的教学观</h3>
+
+<ol>
+<li>学习是一个主动建构知识的过程：the natural consequence of a constructive process. (Bichelmeyer &amp; Hsu, 1999)
+<ol>
+<li>学习者在学习历程中，以自己已有的概念为基础，建立学习意义，主动参与知识的社会建构。</li>
+</ol>
+</li>
+<li>学生是知识的诠释者、创造者、发明者和问题探究者；教师是问题和情境的设计者，讨论、沟通的引导者和知识建构的促进者。
+<ol>
+<li>世界上没有上帝视角，每个人对真理的感知是不同的（后现代主义的特征之一：多种角度、解释甚至真理）</li>
+<li>aka. Something can be true for me, but not true for you.</li>
+<li>Replaced the teacher (or we can say, Objective) as the center of knowledge, with the learner (Or, Subjective)</li>
+<li>Accept there are multiple realities constructed by individuals.</li>
+</ol>
+</li>
+<li>文章中的对比列表（是否可以将传统的教学设计理解为一种行为学派的观点？）</li>
+<li>Variety of Constructivism: cognitive, critical, radical &amp; social.</li>
+</ol>
+<h4 class="mume-header" id="%E7%A0%B4%E9%99%A4%E8%BF%B7%E6%80%9D%E6%A6%82%E5%BF%B5%E5%BB%BA%E6%9E%84%E4%B8%BB%E4%B9%89%E5%92%8C%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E7%9A%84%E8%AF%98%E9%97%AE%E6%B3%95%E6%98%AF%E4%B8%80%E8%84%89%E7%9B%B8%E6%89%BF%E7%9A%84%E5%90%97">破除迷思概念：建构主义和苏格拉底的诘问法是一脉相承的吗？</h4>
+
+<p>Boghossian, P. (2006). <strong>Behaviorism, constructivism, and Socratic pedagogy</strong>. <em>Educational Philosophy and Theory</em>, 38(6), 713-722.</p>
+<ol>
+<li>结论：并不是。Radically different epistemology and metaphysic.<br>
+<img src="Week3Res/IamNot.jpg" alt="&#x5E76;&#x4E0D;&#x662F;"></li>
+<li>建构导向的教学观已有的预设：世界上没有一个客观的、绝对的真理存在。<br>
+Focusing on the process of learning and helping people discover THEIR OWN truth, not THE truth.</li>
+<li>The elenchus: way to the <strong>truth</strong>.
+<ol>
+<li>No true &quot;for me&quot; and not true &quot;for you&quot;</li>
+<li>There is a truth, of course, we just need cooperation and dialogue to find it.</li>
+</ol>
+</li>
+</ol>
+<h3 class="mume-header" id="%E6%89%B9%E5%88%A4%E5%AF%BC%E5%90%91%E7%9A%84%E6%95%99%E5%AD%A6%E8%A7%82">批判导向的教学观</h3>
+
+<ol>
+<li>着重意识形态的批判，认为教育应着眼于学习主题、知识结构、潜在社会价值影响。</li>
+<li>探究的是师生交互作用过程中社会意义的形成，和学校课程中影响教学的社会势力及其意义。</li>
+<li>核心观点：
+<ol>
+<li>意义与符号在社会交互作用中进行交换和磋商的动态过程</li>
+<li>教学是一种社会性、政治性的的活动</li>
+<li>学生在师生互动中习得意义、符号和如何行动，通过师生不断交换意见，转化经验背后的意识形态为知识。</li>
+<li>首要任务是建立学习者主动批判思考和创造的机会，从而能够在自由、民主的批判讨论和诠释活动中，消除特殊的意识形态或将其转化为有价值的经验。</li>
+<li>基于历史——文化的批判思考。</li>
+</ol>
+</li>
+</ol>
+<h4 class="mume-header" id="blooms-taxonomy-of-educational-objectives-cognitive-domain-and-its-revision">Bloom’s taxonomy of educational objectives: cognitive domain, and its revision.</h4>
+
+<ol>
+<li>
+<p>A means of classifying intended behaviours ‘related to mental acts or thinking’ occurring ‘as a result of educational experiences’.</p>
+</li>
+<li>
+<p>存在难易程度的Hierarchy: Each classiﬁcation within it <strong>demands</strong> the skills and abilities which are lower in the classiﬁcation order’.</p>
+<blockquote>
+<ol>
+<li>The major distinctions between classes should reﬂect...the distinctions teachers make among student behaviours.</li>
+<li>The taxonomy should be logically developed and internally consistent.</li>
+<li>The taxonomy should be consistent with our present understanding of psychological phenomena.</li>
+<li>The classiﬁcation should be a purely descriptive scheme in which every type of educational goal can be represented in a relatively neutral fashion.</li>
+</ol>
+</blockquote>
+</li>
+<li>
+<p>Changes in emphasis, terminology, structure had been made in the Anderson and Krathwohl’s revision of Bloom’s taxonomy of educational objectives.</p>
+<ul>
+<li>The revision took account of international feedback and Bloom, together with several of his co-authors contributed to several chapters in this work.</li>
+</ul>
+</li>
+<li>
+<p>6 Major categories and has a varying amount of detail in the form of sub-categories. (For the original one) (Fig.1)<br>
+<img src="Week3Res/Bloom.png" alt="Major Categories"></p>
+<ol>
+<li>着重点方面的变化：增订版在接受了一线教师的建议之后，实际上更加强调连系课程的计划、教学和评量三个点，同时简化了对子类（sub-categories）的描述，且应用了一些实例。</li>
+<li>术语方面的变化：行为动词（Verb）的确立 - the major categories in the cognitive process dimension have been relabelled with verb forms (e.g. apply).
+<ol>
+<li>Knowledge as a cognitive process is renamed remember.</li>
+<li>Sub-categories in the cognitive process dimension have also been labelled with verbs, such as checking and critiquing (sub-categories of evaluate).</li>
+<li>新增四类知识：factual, conceptual, procedural and metacognitive.</li>
+<li>comprehension (noun) → understand (verb) ; synthesis (noun) → create (verb)</li>
+</ol>
+</li>
+<li>结构方面的变化：一个二次元(x)的量表(two-dimensional table), with six cognitive processes and four types of knowledge.<br>
+1.</li>
+</ol>
+</li>
+</ol>
+
+      </div>
+      
+      
+    </body>
+    
+    
+    
+    
+    
+    
+    
+  </html>
