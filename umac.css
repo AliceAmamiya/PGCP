@@ -11,6 +11,35 @@ a, a > code {
   font-size: 60%;
 }
 
+
+/* Two-column layout (from Default theme)*/
+.left-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+
 .remark-code-line-highlighted     { background-color: fce300 ; }
 
 .remark-slide-content {
@@ -30,6 +59,7 @@ a, a > code {
 h1, h2, h3 {
   font-weight: normal;
   color: #002c55;
+  font-size: 90%
 }
 
 .inverse {
@@ -47,3 +77,22 @@ table {
   border-top: 1px solid #666;
   border-bottom: 1px solid #666;
 }
+
+/* Define Colors */
+/*UM Standard Colors*/
+.red {
+/* Actually it is THE University Red LOLOL*/
+  color: #922122
+}
+
+.gold {
+/* University Gold*/
+  color: #d1a825
+}
+
+.blue {
+/* University Blue*/
+  color: #002c55
+}
+
+/*UM Secondary Colors*/
