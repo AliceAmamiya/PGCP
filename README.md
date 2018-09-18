@@ -7,7 +7,7 @@
 ### Upcoming
 
 #### EDUC7101 Group Presentation on Sep. 18
-View: [Handout](EDUC7101H-0918.html) / [Slides](EDUC7101S-0918.html)
+View: [Handout (PDF Version)](EDUC7101P-0918.pdf) / [Handout (HTML Version)](EDUC7101H-0918.html) / [Slides](EDUC7101S-0918.html)
 
 ### Archived
 
