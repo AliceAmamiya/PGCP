@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XuetangX Discussion ID & Thread ID Extractor</title>
+</head>
+ 
+<body>
+    <b>XuetangX Discussion ID & Thread ID Extractor for UMx Team</b> <br>Version: 1.0 Beta, Special Thanks: Kirisame Mion <br>
+    <br>
+    URL of the Thread: 
+    <input type="text" id="weblinkbox">
+    <button onclick="go()">GO!</button>
+    <script type="text/javascript">
+        function go(){
+            // A Silly Solution
+            var mooclinkA = document.getElementById("weblinkbox").value;
+            var mooclinkB = document.getElementById("weblinkbox").value;
+            var didbox=document.getElementById("discussionid");
+            var tidbox=document.getElementById("threadid");
+            var regexDID = new RegExp(/(?<=forum\/).*(?=\/threads)/g);
+            var regexTID = new RegExp(/(?<=threads\/).*/g);
+            var didtext
+            var tidtext
+            while ((didtext = regexDID.exec(mooclinkA)) != null)  {
+              didbox.value = (didtext);
+            }            
+            while ((tidtext = regexTID.exec(mooclinkB)) != null)  {
+              tidbox.value = (tidtext);
+            }
+        }
+    </script>
+
+    <br><br>
+    Discussion ID:
+    <input type="text" id="discussionid" disabled="true">
+    <button id="copyDID">Copy Discussion ID</button>
+    <script>
+      function copyArticle(event) {
+        const range = document.createRange();
+        range.selectNode(document.getElementById('discussionid'));
+ 
+        const selection = window.getSelection();
+        if(selection.rangeCount > 0) selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+        alert("Succeed (Discussion ID)!");
+      }
+      document.getElementById('copyDID').addEventListener('click', copyArticle, false);
+    </script>
+
+    <br><br>
+    Thread ID:
+    <input type="text" id="threadid" disabled="true">
+    <button id="copyTID">Copy Thread ID</button>
+    <script>
+    function copyArticle(event) {
+        const range = document.createRange();
+        range.selectNode(document.getElementById('threadid'));
+
+        const selection = window.getSelection();
+        if(selection.rangeCount > 0) selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+        alert("Succeed (Thread ID)!");
+    }
+        document.getElementById('copyTID').addEventListener('click', copyArticle, false);
+    </script>
+
+<br><br><img src="V1.png" width=480 px>
+
+  </body>
+ 
+<!-- 
+Discussion ID
+(?<=forum\/).*(?=\/threads)
+Thread ID
+(?<=threads\/).*
+-->
+
+
+
+
