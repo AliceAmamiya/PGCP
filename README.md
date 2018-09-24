@@ -1,9 +1,10 @@
 # Sunlight Yellow Overdrive
 
-> 培训班除了喜欢做高仿之外，还特别喜欢做一件事：让学员把 GitHub 当网盘，把作业——通常都是垃圾项目——放到 GitHub 上刷版。  
-> ——光谱 杜晨 @ PingWest品玩
+> 培训班除了喜欢做高仿之外，还特别喜欢做一件事：让学员把 GitHub 当网盘，把作业（通常都是垃圾项目）放到 GitHub 上刷版。(光谱&杜晨, 2018)
 > 
-> 没错，就是我！Yes, I am!
+> 没错，说得就是我！Yes, I am!
+
+![Yes I am](./Resources/YES_I_AM.jpg)
 
 ---
 
