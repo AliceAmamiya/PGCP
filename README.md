@@ -3,8 +3,9 @@
 > 培训班除了喜欢做高仿之外，还特别喜欢做一件事：让学员把 GitHub 当网盘，把作业（通常都是垃圾项目）放到 GitHub 上刷版。(光谱&杜晨, 2018)
 
 **没错，说得就是我！Yes, I am!**  
-![Yes I am](./Resources/YES_I_AM.jpg)
-*(Kaoru Hanazono from the Animation, No-Rin)*
+
+![Yes I am](./Resources/Youre_such_a_failure.jpg)
+*(Kaoruko Moeta, my Waifu, from Comic Girls)*
 
 ---
 
