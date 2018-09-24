@@ -4,7 +4,7 @@
 
 ## Contents
 
-### Ongoing& Upcoming
+### Ongoing & Upcoming
 #### XuetangX Discussion ID & Thread ID Extractor
 [Transforming the ordinary into extraordinary.](./XTXExtractor/Extractor.html)
 
