@@ -1,83 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>XuetangX Discussion ID & Thread ID Extractor</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
+    <link href="./mui/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <script src="./mui/js/mui.min.js"></script>
   </head>
  
-<body>
-    <font face="Noto Sans">XuetangX Discussion ID & Thread ID Extractor for UMx Team</font> <br>Version: 1.0; Special Thanks: Kirisame Mion<br>
-    <br>
-    URL of the Thread: 
-    <input type="text" id="weblinkbox" style="width:28.5em;"/>
-    <button onclick="go()">GO!</button>
-    <script type="text/javascript">
-        function go(){
-            // A Silly Solution
-            var mooclinkA = document.getElementById("weblinkbox").value;
-            var mooclinkB = document.getElementById("weblinkbox").value;
-            var didbox=document.getElementById("discussionid");
-            var tidbox=document.getElementById("threadid");
-            var regexDID = new RegExp(/(?<=forum\/).*(?=\/threads)/g);
-            var regexTID = new RegExp(/(?<=threads\/).*/g);
-            var didtext
-            var tidtext
-            while ((didtext = regexDID.exec(mooclinkA)) != null)  {
-              didbox.value = (didtext);
-            }            
-            while ((tidtext = regexTID.exec(mooclinkB)) != null)  {
-              tidbox.value = (tidtext);
-            }
-        }
-    </script>
+  <body>
+<!-- A Header -->
+    <header class="mui-appbar mui--z1">
+      <div class="mui-container">
+        <table>
+          <tr class="mui--appbar-height">
+            <td class="mui--text-title">
+              XuetangX Discussion ID & Thread ID Extractor
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
 
-    <br><br>
-    Discussion ID:
-    <input type="text" id="discussionid" style="width:24em;">
-    <button id="copyDID">Copy Discussion ID</button>
-    <script>
-      function FcopyDID() {
-        var DIDcopied=document.getElementById("discussionid");
-        DIDcopied.select();
-        document.execCommand('copy');
-        alert("Succeed (Discussion ID)!");
+<!-- Scripts -->
+  <script type="text/javascript">
+  function GetID(){
+    var mooclinkA = document.getElementById("weblinkbox").value;
+    var mooclinkB = document.getElementById("weblinkbox").value;
+    var didbox=document.getElementById("discussionid");
+    var tidbox=document.getElementById("threadid");
+    var regexDID = new RegExp(/(?<=forum\/).*(?=\/threads)/g);
+    var regexTID = new RegExp(/(?<=threads\/).*/g);
+    var didtext
+    var tidtext
+    while ((didtext = regexDID.exec(mooclinkA)) != null)  {
+      didbox.value = (didtext);
       }
-      document.getElementById('copyDID').addEventListener('click', FcopyDID, false);
-    </script>
+    while ((tidtext = regexTID.exec(mooclinkB)) != null)  {
+      tidbox.value = (tidtext);
+      }
+  }
 
-    <br><br>
-    Thread ID:
-    <input type="text" id="threadid" style="width:28em;">
-    <button id="copyTID">Copy Thread ID</button>
-    <script>
-        function FcopyTID() {
-          var TIDcopied=document.getElementById("threadid");
-          TIDcopied.select();
-          document.execCommand('copy');
-          alert("Succeed (Thread ID)!");
-        }
-        document.getElementById('copyTID').addEventListener('click', FcopyTID, false);
+  function FcopyDID() {
+    var DIDcopied=document.getElementById("discussionid");
+    DIDcopied.select();
+    document.execCommand('copy');
+    alert("Succeed (Discussion ID)!");
+  }
+
+  function FcopyTID() {
+    var TIDcopied=document.getElementById("threadid");
+    TIDcopied.select();
+    document.execCommand('copy');
+    alert("Succeed (Thread ID)!");
+  }
+
+  </script>
+
+<!-- Contents -->
+    <div id="content-wrapper" class="mui-container">
+      <div class="mui--appbar-height"></div>
+
+      <div class="mui-panel">
+        <div class="mui-textfield">
+          <input type="text" id="weblinkbox" placeholder="Paste the Thread URL Here!">
+          <br>
+          <center><button type="submit" onclick="GetID()" class="mui-btn mui-btn--raised mui-btn--primary">Get Started!</button></center>
+        </div>
+      </div>
+      
+      <div class="mui-textfield">
+        <b>Discussion ID: </b>
+          <input type="text" id="discussionid" readonly = "readonly">
+          <div align="right"><button type="submit" onclick="FcopyDID()" class="mui-btn mui-btn--flat mui-btn--primary">Copy Discussion ID</button></div>
+      </div>
+
+      <div class="mui-textfield">
+        <b>Thread ID: </b>
+          <input type="text" id="threadid" readonly = "readonly">
+          <div align="right"><button type="submit" onclick="FcopyTID()" class="mui-btn mui-btn--flat mui-btn--primary">Copy Thread ID</button></div>
+      </div>
+      <br>
+      <br>
+
+      <center>
+        <button id="OneKeyCopy" class="mui-btn mui-btn--danger">One-Key Copy (Beta)</button>
+      </center>
+      <script>
+          document.getElementById('OneKeyCopy').addEventListener('click', GetID, false);
+          document.getElementById('OneKeyCopy').addEventListener('click', FcopyDID, false);
+          document.getElementById('OneKeyCopy').addEventListener('click', FcopyTID, false);
       </script>
-
-<br><br>
-
-<button id="OneKeyCopy" style="width:44.5em;">One-Key Copy (Beta)</button>
-<script>
-    document.getElementById('OneKeyCopy').addEventListener('click', go, false);
-    document.getElementById('OneKeyCopy').addEventListener('click', FcopyDID, false);
-    document.getElementById('OneKeyCopy').addEventListener('click', FcopyTID, false);
-
-</script>
-
-
-<br><br><img src="V1.jpg" width=490 px>
+      <br>
+      <img src="V1.jpg" width=100%">
+      <br>
+      <br>
+    </div>
+<!-- A Footer -->
+    <footer>
+      <div class="mui-container mui--text-center">
+        Version 1.1 (Beta), CSS framework by <a href="https://www.muicss.com/">MUI</a>
+        <br>
+        R. K. Amamiya@UMx Team; Special Thanks: <a href="https://github.com/Mion354D">Kirisame Mion</a>
+      </div>
+    </footer>
 
   </body>
- 
-<!-- 
-Discussion ID
-(?<=forum\/).*(?=\/threads)
-Thread ID
-(?<=threads\/).*
--->
+</html>
