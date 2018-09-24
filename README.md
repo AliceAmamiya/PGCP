@@ -4,13 +4,13 @@
 
 ## Contents
 
-### Ongoing & Upcoming
-#### XuetangX Discussion ID & Thread ID Extractor
+### XuetangX Discussion ID & Thread ID Extractor
 [Transforming the ordinary into extraordinary.](./XTXExtractor/Extractor.html)  
-If you prefer the [Classic Version](./XTXExtractor/ExtractorV1.html).  
+*Just in case if you prefer the [Classic Version](./XTXExtractor/ExtractorV1.html).*  
 
-#### UMx Article
-View: [HTML](./UMx/Creative Moment.html)
+### Ongoing & Upcoming
+
+None.
 
 ---
 
