@@ -2,17 +2,16 @@
 
 ---
 
-## Contents
-
-### XuetangX Discussion ID & Thread ID Extractor
+## XuetangX Discussion ID & Thread ID Extractor
 [Transforming the ordinary into extraordinary.](./XTXExtractor/Extractor.html)  
 *Just in case if you prefer the [Classic Version](./XTXExtractor/ExtractorV1.html).*  
 
+---
+## Contents
 ### Ongoing & Upcoming
 
 None.
 
----
 
 ### Archived
 #### EDUC7101 Group Presentation on Sep. 18
