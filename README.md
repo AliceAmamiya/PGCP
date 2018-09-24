@@ -6,7 +6,8 @@
 
 ### Ongoing & Upcoming
 #### XuetangX Discussion ID & Thread ID Extractor
-[Transforming the ordinary into extraordinary.](./XTXExtractor/Extractor.html)
+[Transforming the ordinary into extraordinary.](./XTXExtractor/Extractor.html)  
+If you prefer the [Classic Version](./XTXExtractor/ExtractorV1.html).  
 
 #### UMx Article
 View: [HTML](./UMx/Creative Moment.html)
