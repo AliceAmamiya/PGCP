@@ -10,8 +10,8 @@
 ---
 
 ## XuetangX Discussion ID & Thread ID Extractor
-[Transforming the ordinary into extraordinary.](./XTXExtractor/Extractor.html)  
-*Just in case if you prefer the [Classic Version](./XTXExtractor/ExtractorV1.html).*  
+[Transforming the ordinary into extraordinary.](./XTXExtractor/Index.html)  
+*or, Just in case if you prefer the [Classic Version](./XTXExtractor/Legacy.html).*  
 
 ---
 ## Contents
