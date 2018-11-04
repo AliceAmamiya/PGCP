@@ -1,6 +1,6 @@
 # Sunlight Yellow Overdrive
 
-> 培训班除了喜欢做高仿之外，还特别喜欢做一件事：让学员把 GitHub 当网盘，把作业（通常都是垃圾项目）放到 GitHub 上刷版。(光谱&杜晨, 2018)
+> 培训班除了喜欢做高仿之外，还特别喜欢做一件事：让学员把 GitHub 当网盘，把作业（通常都是垃圾项目）放到 GitHub 上刷版。(光谱 & 杜晨, 2018)
 
 **没错，说得就是我！Yes, I am!**  
 
@@ -14,7 +14,8 @@
 View: [Handout (PDF)](EDUC7101P-1106.pdf) / [Handout (HTML)](EDUC7101H-1106.html) / [Slides](EDUC7101S-1106.html)  
 
 #### EDCI7103 Group Presentation on Nov. 12
-View: [Translation](EDCI7103T-1112.pdf) / [Handout (HTML)](EDCI7103H-1112.html) /[Handout (PDF)](EDCI7103P-1112.pdf)  
+*(Placeholders, not avalable now)*  
+View: [Translation](EDCI7103T-1112.pdf) / [Handout (HTML)](EDCI7103H-1112.html) / [Handout (PDF)](EDCI7103P-1112.pdf)  
 
 ---
 
