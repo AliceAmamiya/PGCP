@@ -9,18 +9,22 @@
 
 ---
 
+## Ongoing & Upcoming
+#### EDUC7101 Group Presentation on Nov. 6
+View: [Handout (PDF)](EDUC7101P-1106.pdf) / [Handout (HTML)](EDUC7101H-1106.html) / [Slides](EDUC7101S-1106.html)  
+
+#### EDCI7103 Group Presentation on Nov. 12
+View: [Translation](EDCI7103T-1112.pdf) / [Handout (HTML)](EDCI7103H-1112.html) /[Handout (PDF)](EDCI7103P-1112.pdf)  
+
+---
+
 ## XuetangX Discussion ID & Thread ID Extractor
 [Transforming the ordinary into extraordinary.](./XTXExtractor/Index.html)  
 *or, Just in case if you prefer the [Classic Version](./XTXExtractor/Legacy.html).*  
 
 ---
-## Contents
-### Ongoing & Upcoming
 
-#### EDUC7013 Group Presentation on Oct. 8
-Working in Progress. 
-
-### Archived
+## Archived
 #### EDUC7101 Group Presentation on Sep. 18
 View: [Handout (PDF)](EDUC7101P-0918.pdf) / [Handout (HTML)](EDUC7101H-0918.html) / [Slides](EDUC7101S-0918.html)
 
