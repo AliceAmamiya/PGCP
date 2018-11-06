@@ -11,7 +11,7 @@
 
 ## Ongoing & Upcoming
 #### EDUC7101 Group Presentation on Nov. 6
-View: [Handout (PDF)](EDUC7101P-1106.pdf) / [Handout (HTML)](EDUC7101H-1106.html)
+View: [Handout (PDF)](EDUC7101P-1106.pdf) / [Handout (HTML)](EDUC7101H-1106.html)  
 
 #### EDCI7103 Group Presentation on Nov. 12
 *(Placeholders, not avalable now)*  
