@@ -10,12 +10,9 @@
 ---
 
 ## Ongoing & Upcoming
-#### EDUC7101 Group Presentation on Nov. 6
-View: [Handout (PDF)](EDUC7101P-1106.pdf) / [Handout (HTML)](EDUC7101H-1106.html)  
-
-#### EDCI7103 Group Presentation on Nov. 12
-*(Placeholders, not avalable now)*  
-View: [Translation](EDCI7103T-1112.pdf) / [Handout (HTML)](EDCI7103H-1112.html) / [Handout (PDF)](EDCI7103P-1112.pdf)  
+#### EDUC7103 Group Presentation on Nov. 12
+Topic: PISA in Focus 50  
+View: [Handout (HTML)](EDUC7103H-1112.html) / [Translation of OECD Document](EDUC7103T-1112.pdf)  
 
 ---
 
@@ -26,6 +23,10 @@ View: [Translation](EDCI7103T-1112.pdf) / [Handout (HTML)](EDCI7103H-1112.html) 
 ---
 
 ## Archived
+
+#### EDUC7101 Group Presentation on Nov. 6
+View: [Handout (PDF)](EDUC7101P-1106.pdf) / [Handout (HTML)](EDUC7101H-1106.html)  
+
 #### EDUC7101 Group Presentation on Sep. 18
 View: [Handout (PDF)](EDUC7101P-0918.pdf) / [Handout (HTML)](EDUC7101H-0918.html) / [Slides](EDUC7101S-0918.html)
 
