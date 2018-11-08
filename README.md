@@ -4,13 +4,10 @@
 
 **没错，说得就是我！Yes, I am!**  
 
-![Yes I am](./Resources/Youre_such_a_failure.jpg)
-*(Kaoruko Moeta, my Waifu, from Comic Girls)*
-
 ---
 
 ## Ongoing & Upcoming
-#### EDUC7103 Group Presentation on Nov. 12
+### EDUC7103 Group Presentation on Nov. 12
 Topic: PISA in Focus 50  
 View: [Handout (HTML)](EDUC7103H-1112.html) / [Translation of OECD Document](EDUC7103T-1112.pdf)  
 
@@ -24,12 +21,17 @@ View: [Handout (HTML)](EDUC7103H-1112.html) / [Translation of OECD Document](EDU
 
 ## Archived
 
-#### EDUC7101 Group Presentation on Nov. 6
+### EDUC7101 Group Presentation on Nov. 6
 View: [Handout (PDF)](EDUC7101P-1106.pdf) / [Handout (HTML)](EDUC7101H-1106.html)  
 
-#### EDUC7101 Group Presentation on Sep. 18
+### EDUC7101 Group Presentation on Sep. 18
 View: [Handout (PDF)](EDUC7101P-0918.pdf) / [Handout (HTML)](EDUC7101H-0918.html) / [Slides](EDUC7101S-0918.html)
 
 ---
+
+![Yes I am](./Resources/Youre_such_a_failure.jpg)
+
+---
+
 *HTML Version is highly recommended for all smartphone users.*
 *All slides are rendered to HTML by [Xaringan](https://github.com/yihui/xaringan) through R Markdown.*
