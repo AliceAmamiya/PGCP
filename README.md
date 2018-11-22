@@ -13,9 +13,8 @@
 #### EDUC7101 Group Presentation on Nov. 6
 View: [Handout (PDF)](EDUC7101P-1106.pdf) / [Handout (HTML)](EDUC7101H-1106.html)  
 
-#### EDCI7103 Group Presentation on Nov. 12
-*(Placeholders, not avalable now)*  
-View: [Translation](EDCI7103T-1112.pdf) / [Handout (HTML)](EDCI7103H-1112.html) / [Handout (PDF)](EDCI7103P-1112.pdf)  
+#### EDCI7162 Assignment
+[NGSS Assignment Draft 2](NGSSDraft2.pdf) 
 
 ---
 
