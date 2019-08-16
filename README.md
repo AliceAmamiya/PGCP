@@ -5,6 +5,10 @@
 **没错，说得就是我！Yes, I am!**  
 
 ---
+## UMRC APK for Android Phones with no Google Play Services  
+Download： [UMRC110.apk](./Resources/UMRC110.apk)  
+
+---
 
 ## Ongoing & Upcoming
 #### EDUC7101 Group Presentation on Nov. 6
